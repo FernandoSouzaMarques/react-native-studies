@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "jsx": "preserve",
+    "baseUrl": "./source",
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "source/**/*.ts", "source/**/*.tsx"],
+  "exclude": ["node_modules"]
+}
